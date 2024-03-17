@@ -57,30 +57,30 @@ a {
 
 .hero h1 {
    top: 0; 
-   
    width: 100%;
-   background-color: #e9dead49;
-   padding: 1rem;
-   margin: 0;
+   background-color: #e9deadb9;
+   text-align: center;
+   
 }
 
 .hero article {
     top: 5rem;
-    background-color: #f3f3e1;
-    margin: 2rem;
+    background-color: #f3f3e171;
+    margin: 15px;
     padding: 1rem;
+    
+
 }
 
 .hero article img {
     float: right;
-    width: 200px;
+    width: 150px;
     margin-left: 1rem;
 }
 
-.hero h1 .hero article {
+.hero h1, .hero article {
     position: absolute;
-    bottom : 25%;
-    
+
     
 }
 
