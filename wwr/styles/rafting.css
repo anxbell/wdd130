@@ -19,16 +19,20 @@
 body {
         font-family: var(--paragraph-font);
         max-width: 960px;
+        margin: 0 auto;
         padding: 20px;
         background-color: #f3f3e1;
+        text-align: justify;
         /* #f3f3e1 */
         
     }
     
 
 * {
-    
-        box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
 }
 
     
@@ -38,13 +42,21 @@ h1, h2, h3, h4, h5, h6 {
      
 }
 
+
+section h2 {
+    text-align: center;
+    margin: 1rem;
+
+}
+
 a {
     text-decoration: none;
 }
 
 .hero {
     position: relative;
-    margin: 10px auto;
+    text-align: center;
+    overflow: hidden;
 }
 
 
@@ -60,7 +72,6 @@ a {
    width: 100%;
    background-color: #e9deadb9;
    text-align: center;
-   
 }
 
 .hero article {
@@ -68,7 +79,6 @@ a {
     background-color: #f3f3e171;
     margin: 15px;
     padding: 1rem;
-    
 
 }
 
@@ -80,7 +90,106 @@ a {
 
 .hero h1, .hero article {
     position: absolute;
+ 
+}
 
+header {
+    margin: 1rem auto;
+    display: grid;
+    justify-items: normal;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    border-bottom: 1px solid #000000;
+    padding: 20px;
+}
+
+header img {
+    margin: 1px;
+	width: 200px;
+	height: auto;
+}
+nav {
+    text-align: right;
+    display: flex;  
+}
+
+nav a {
+    display: block;
+    padding: 20px;
+    flex: 1 1 100%;
+}
+
+
+.grid {
+    display: flex;
+    justify-content: space-evenly;
+    grid-template-columns: 1fr 250px 1fr;
+    /* padding-top: 20px; %%%%% */
+}
+
+.item {
+
+    width: fit-content;
+    margin: 10px;
+}
+.item-1 {
+    min-height: 200px;
+}
+
+.item-2 {
+    
+    min-height: 200px;
+}
+
+.item-2 img {
+    width: 250px;
+	height: auto;
+}
+
+.item-3 {
+    
+    min-height: 200px;
+}
+
+.grid-2 {
+    justify-content: space-evenly;
+    display: grid;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+}
+
+.grid-2 img {
+    width: 180px;
+    height: auto;
+}
+
+.grid-2 figure {
+    grid-row : 2 / 3;
+    text-align: center;
     
 }
 
+footer {
+    border-top: 1px solid #000;
+    margin: 1rem;
+    padding: 10px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+footer p {
+   display: flex;
+   padding: 20px;
+}
+
+.socials nav {
+    display: grid;
+    flex-direction: row;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.socials img {
+    width: 30px;
+    height: auto;
+}
