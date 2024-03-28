@@ -87,7 +87,7 @@ button:hover {
     background-color : var(--nav-background-color);
 }
 
-header {
+header, footer {
     padding: 0;
     margin: 0 auto;
     max-width : 500px;
