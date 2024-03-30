@@ -331,7 +331,7 @@ button:hover {
 .item-c {
 
     width: fit-content;
-    /* margin: 10px; */
+
 }
 
 .item-c p {
@@ -346,15 +346,14 @@ button:hover {
 
 
 .map {
-    margin: 0;
     min-height: 200px;
-    border: #8A6708 solid 1px;
-    border-radius : 10px
+    border-radius : 10px;
 }
 
 .map iframe {
     
     width: 400px;
 	height: 400px;
-    border-radius : 10px
+    border-radius : 10px;
+    border: #8A6708 solid 1px;
 }
