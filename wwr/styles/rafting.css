@@ -604,7 +604,7 @@ trips */
 }
 
 table {
-    display: flexbox;
+    display: block;
     margin : 0 auto;
     padding : 10px;
     max-width : 960px;
